@@ -1,6 +1,6 @@
 let a = 823 + 7482 + 54156 + 516 + 546 + 98 + 7491 + 3541 + 8423 + 1561;
-a = a/10
-console.log(a)
+a = a/10;
+console.log(a);
 
 let b = 823 - a;
 b = b**2;
@@ -26,4 +26,4 @@ k = k**2;
 let s = b + c + d + e + f + g + h + i + j + k;
 
 
-console.log(s/9)
+console.log(s/9);
