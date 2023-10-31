@@ -3,7 +3,7 @@ a = a/10
 console.log(a)
 
 let b = 823 - a;
-b = b**2:
+b = b**2;
 let c = 7482 - a;
 c = c**2;
 let d = 54156 - a;
