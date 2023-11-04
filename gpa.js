@@ -31,20 +31,20 @@ let humanitiesUnits = 1;
 
 let sumUnits = englishUnits + frenchUnits + mathematicsUnits 
 + physicsUnits + physicsUnits + chemistryUnits + biologyUnits 
-+ workshopUnits + technicalDrawingUnits + humanitiesUnits 
++ workshopUnits + technicalDrawingUnits + humanitiesUnits;
 
 let englishGrade = prompt('enter english grade');
-if (englishGrade == 'A'){student.english = A * englishUnits}
-else if (englishGrade == 'B'){student.english = B * englishUnits}
-else if (englishGrade == 'C'){student.english = C * englishUnits}
-else if (englishGrade == 'D'){student.english = D * englishUnits}
-else if (englishGrade == 'E'){student.english = E * englishUnits}
-else if (englishGrade == 'F'){student.english = F * englishUnits}
+if (englishGrade == 'A'){student.english = A * englishUnits};
+else if (englishGrade == 'B'){student.english = B * englishUnits};
+else if (englishGrade == 'C'){student.english = C * englishUnits};
+else if (englishGrade == 'D'){student.english = D * englishUnits};
+else if (englishGrade == 'E'){student.english = E * englishUnits};
+else if (englishGrade == 'F'){student.english = F * englishUnits};
 
 let frenchGrade = prompt('enter french grade');
-if (frenchGrade == 'A'){student.french = A * frenchUnits}
-else if (frenchGrade == 'B'){student.french = B * frenchUnits}
-else if (frenchGrade == 'C'){student.french = C * frenchUnits}
+if (frenchGrade == 'A'){student.french = A * frenchUnits};
+else if (frenchGrade == 'B'){student.french = B * frenchUnits};
+else if (frenchGrade == 'C'){student.french = C * frenchUnits};
 else if (frenchGrade == 'D'){student.french = D * frenchUnits}
 else if (frenchGrade == 'E'){student.french = E * frenchUnits}
 else if (frenchGrade == 'F'){student.french = F * frenchUnits}
