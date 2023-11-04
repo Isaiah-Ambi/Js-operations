@@ -34,12 +34,12 @@ let sumUnits = englishUnits + frenchUnits + mathematicsUnits
 + workshopUnits + technicalDrawingUnits + humanitiesUnits;
 
 let englishGrade = prompt('enter english grade');
-if (englishGrade == 'A'){student.english = A * englishUnits};
-else if (englishGrade == 'B'){student.english = B * englishUnits};
-else if (englishGrade == 'C'){student.english = C * englishUnits};
-else if (englishGrade == 'D'){student.english = D * englishUnits};
-else if (englishGrade == 'E'){student.english = E * englishUnits};
-else if (englishGrade == 'F'){student.english = F * englishUnits};
+if (englishGrade == 'A'){student.english = A * englishUnits}
+else if (englishGrade == 'B'){student.english = B * englishUnits}
+else if (englishGrade == 'C'){student.english = C * englishUnits}
+else if (englishGrade == 'D'){student.english = D * englishUnits}
+else if (englishGrade == 'E'){student.english = E * englishUnits}
+else if (englishGrade == 'F'){student.english = F * englishUnits}
 
 let frenchGrade = prompt('enter french grade');
 if (frenchGrade == 'A'){student.french = A * frenchUnits};
@@ -107,7 +107,7 @@ else if (humanitiesGrade == 'F'){student.humanities = F * humanitiesUnits}
 
 console.log(student)
 let sumGrade = student.english + student.french + student.mathematics + student.physics 
-+ student.chemistry + student.biology + student.workshop + student.technicalDrawing + student.humanities
++ student.chemistry + student.biology + student.workshop + student.technicalDrawing + student.humanities;
 
 
 let gpa = sumGrade/sumUnits
