@@ -11,7 +11,6 @@ const student = {
 };
 
 
-
 let A = 5;
 let B = 4;
 let C = 3;
