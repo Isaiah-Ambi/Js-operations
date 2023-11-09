@@ -17,46 +17,51 @@ let D = 2;
 let E = 1;
 let F = 0;
 
-let englishUnits = 2;
-let frenchUnits = 1;
-let mathematicsUnits = 4;
-let physicsUnits = 4;
-let chemistryUnits = 4;
-let biologyUnits = 3;
-let workshopUnits = 1;
-let technicalDrawingUnits = 1;
-let humanitiesUnits = 1;
+// let englishUnits = 2;
+// let frenchUnits = 1;
+// let mathematicsUnits = 4;
+// let physicsUnits = 4;
+// let chemistryUnits = 4;
+// let biologyUnits = 3;
+// let workshopUnits = 1;
+// let technicalDrawingUnits = 1;
+// let humanitiesUnits = 1;
 
-let englishGrade = prompt('enter english grade');
-student.english = gradeConvert(englishGrade, englishUnits);
+student.english = getGrade('english ', 2)
+student.french = getGrade('french ', 1)
+student.mathematics = getGrade('mathematics', 4)
+student.physics = getGrade('physics ', 4)
+student.chemistry = getGrade('chemistry ', 4)
+student.biology = getGrade('biology ', 3)
+student.workshop = getGrade('workshop ', 1)
+student.technicalDrawing = getGrade('technicalDrawing ', 1)
+student.humanities = getGrade('humanitites ', 1)
 
+const sumUnits = englishUnits + frenchUnits + mathematicsUnits 
++ physicsUnits + physicsUnits + chemistryUnits + biologyUnits 
++ workshopUnits + technicalDrawingUnits + humanitiesUnits;
 
-let frenchGrade = prompt('enter french grade');
-student.french = gradeConvert(frenchGrade, frenchUnits);
+const sumGrade = student.english + student.french + student.mathematics + student.physics 
+    + student.chemistry + student.biology + student.workshop + student.technicalDrawing + student.humanities;
 
-let mathGrade = prompt('enter math grade');
-student.mathematics = gradeConvert(mathGrade, mathematicsUnits);
+const gpa = sumGrade/sumUnits;
 
-let physicsGrade = prompt('enter physics grade');
-student.physics = gradeConvert(physicsGrade, physicsUnits)
-
-let chemistryGrade = prompt('enter chemistry grade');
-student.chemistry = gradeConvert(chemistryGrade, chemistryUnits)
-
-let biologyGrade = prompt('enter biology grade');
-student.biology = gradeConvert(biologyGrade, biologyUnits)
-
-let workshopGrade = prompt('enter workshop grade');
-student.workshop = gradeConvert(workshopGrade, workshopUnits)
-
-let technicalDrawingGrade = prompt('enter technical drawing grade');
-student.technicalDrawing = gradeConvert(technicalDrawingGrade, technicalDrawingUnits)
-
-let humanitiesGrade = prompt('enter humanities grade');
-student.humanitites = gradeConvert(humanitiesGrade, humanitiesUnits)
-
+function getGrade(subject, units){
+    let userInput;
+    while (true) {
+        userInput = prompt(subject + ' grade');
+        if (userInput === 'A' || userInput === 'B' || userInput === 'C' || userInput === 'D' || userInput === 'E' || userInput === 'F')
+        {   ;
+            break;}
+        else {
+            alert('invalid input');
+        }
+    }
+    return gradeConvert(userInput, units)
+}
 
 function gradeConvert (studentGrade, subjectUnits){
+    // let subject = 0
     if (studentGrade == 'A'){subject = A * subjectUnits}
     else if (studentGrade == 'B'){subject = B * subjectUnits}
     else if (studentGrade == 'C'){subject = C * subjectUnits}
@@ -64,11 +69,8 @@ function gradeConvert (studentGrade, subjectUnits){
     else if (studentGrade == 'E'){subject = E * subjectUnits}
     else if (studentGrade == 'F'){subject = F * subjectUnits}
 
-    return subject;
+    return subject
 };
 
-
-
-console.log(student)
-
-
+console.log(gpa);
+document.write(gpa);
