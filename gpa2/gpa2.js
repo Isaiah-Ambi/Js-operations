@@ -17,15 +17,15 @@ let D = 2;
 let E = 1;
 let F = 0;
 
-// let englishUnits = 2;
-// let frenchUnits = 1;
-// let mathematicsUnits = 4;
-// let physicsUnits = 4;
-// let chemistryUnits = 4;
-// let biologyUnits = 3;
-// let workshopUnits = 1;
-// let technicalDrawingUnits = 1;
-// let humanitiesUnits = 1;
+let englishUnits = 2;
+let frenchUnits = 1;
+let mathematicsUnits = 4;
+let physicsUnits = 4;
+let chemistryUnits = 4;
+let biologyUnits = 3;
+let workshopUnits = 1;
+let technicalDrawingUnits = 1;
+let humanitiesUnits = 1;
 
 student.english = getGrade('english ', 2)
 student.french = getGrade('french ', 1)
