@@ -49,12 +49,12 @@ const gpa = sumGrade/sumUnits;
 function getGrade(subject, units){
     let userInput;
     while (true) {
-        userInput = prompt(subject + ' grade');
+        userInput = prompt('what was your grade in ' + subject);
         if (userInput === 'A' || userInput === 'B' || userInput === 'C' || userInput === 'D' || userInput === 'E' || userInput === 'F')
         {   ;
             break;}
         else {
-            alert('invalid input');
+            alert('incorrect grade value. Please type in your appropriate grade in ' + subject);
         }
     }
     return gradeConvert(userInput, units)
