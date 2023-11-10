@@ -1,5 +1,5 @@
-let chances = 3
-let luckyNum = 44
+let chances = 3;
+let luckyNum = 44;
 
 do {
    guess = prompt('lucky')
@@ -16,7 +16,7 @@ do {
 //    else {console.log('correct answer')}
 } while (chances != 0 & guess != luckyNum);
 
-console.log('You Lost!')
+console.log('You Lost!');
 
 function isNumber(input) {
     return !isNaN(input) && isFinite(input);
