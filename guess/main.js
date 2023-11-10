@@ -1,5 +1,5 @@
-let chances = 10
-let luckyNum = 44
+let chances = 10;
+let luckyNum = 44;
 
 do {
    guess = prompt('guess a number between 0 and 100')
@@ -17,8 +17,8 @@ do {
 //    else {console.log('correct answer')}
 } while (chances != 0 & guess != luckyNum);
 
-console.log('You Lost!')
-alert("You're out of chances!")
+console.log('You Lost!');
+alert("You're out of chances!");
 
 function isNumber(input) {
     return !isNaN(input) && isFinite(input);
