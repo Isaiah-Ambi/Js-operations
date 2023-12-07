@@ -35,7 +35,7 @@ function isEvenOdd(n, b) {
 
 
 
-console.log(isEvenOdd(5, true))
-console.log(isEvenOdd(5, false))
-console.log(isEvenOdd(8, true))
-console.log(isEvenOdd(8, false))
+// console.log(isEvenOdd(5, true))
+// console.log(isEvenOdd(5, false))
+// console.log(isEvenOdd(8, true))
+// console.log(isEvenOdd(8, false))
