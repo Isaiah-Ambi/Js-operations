@@ -6,7 +6,7 @@ function reverse(str) {
     while (stringLength >= 0) {
         let newChar = '';
         newChar = str.slice(stringLength-1,stringLength);
-        console.log(newChar);
+        // console.log(newChar);
         newstr += newChar;
         stringLength--;
         
@@ -16,4 +16,4 @@ function reverse(str) {
 
 
 //test
-console.log(reverse('hello'));
+// console.log(reverse('hello'));
