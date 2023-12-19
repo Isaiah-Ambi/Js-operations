@@ -7,3 +7,5 @@ function reverse(str) {
     }
     return reversedStr;
 }
+
+console.log(reverse('hello'))
